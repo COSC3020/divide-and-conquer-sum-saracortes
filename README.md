@@ -25,3 +25,11 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+The recurrence relation is T(n)=3T(n/3)+O(1). It runs in linear time (Θ(n)). This happens because every element in the array is processed only once throughout all recursive calls, which is why the sum computation is efficient.
+
+
+
+
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
