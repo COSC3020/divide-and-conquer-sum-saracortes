@@ -6,8 +6,8 @@ function divideAndConquerSum(a) {
         return a[0];
     }
 
-    const oneThird = Math.floor(a.length / 3);
-    const twoThirds = 2 * oneThird;
+    const oneThird = Math.ceil(a.length / 3); // used help from chatgpt to trouble shoot this line
+    const twoThirds = Math.ceil(2 * a.length / 3); 
 
     const leftSide = a.slice(0, oneThird);
     const middle = a.slice(oneThird, twoThirds);
