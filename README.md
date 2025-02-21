@@ -26,8 +26,10 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-The recurrence relation is T(n)=3T(n/3)+O(n). It runs in the time complexity (Θ(n log n)). This is because the function makes three recursive calls on subarrays of size n/3 while doing O(n) work.
+## T(n) ∈ Θ(nlogn)
+If the algorithm goes to the base case, it will have a time complexity of T(1)=1. Splitting the array then has a constant time complexity (T(n)=1). After that, it makes 3 recursive calls on a third of the input and adds them so the time complexity will be T(n) = 3T(n/3). And adding the sum of the arrays also has a time complexity of T(1)=1. This means that the recurrence relation is T(n) = 1 when n<=1. T(n) = 3T(n/3) when n>1.
 
+In order to find the recurrence relation, I used the notes from class.
 
 
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
