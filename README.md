@@ -28,7 +28,7 @@ most important part. Add your answer to this markdown file.
 
 If the algorithm goes to the base case, it will have a time complexity of T(1)=1. Splitting the array then has a constant time complexity (T(n)=1). After that, it makes 3 recursive calls on a third of the input and adds them so the time complexity will be T(n) = 3T(n/3). And adding the sum of the arrays also has a time complexity of T(1)=1. 
 
-This means that the recurrence relation is T(n) = 1 when n<=1. T(n) = 3T(\frac{n}{3}) when n>1.
+This means that the recurrence relation is T(n) = 1 when n<=1. T(n) = 3T(n/3) when n>1.
 
 To determine the theta complexity of \( T(n) \), we repeatedly replace \( T(n) \) with its own formula to see how it changes with each step. We then figure out how many times we can do this before reaching the base case and simplify \( T(n) \) so that it no longer refers to itself.
 
